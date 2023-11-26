@@ -6,7 +6,7 @@ import requests
 st.set_page_config(layout="wide")
 
 def fetch_poster(movie_id):
-    response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=e2d0ec344785b0f6c087072e01cfcf78&language=en-US'.format(movie_id))
+    response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=a4633811a1eeb1a7a2f015f96bde5cfc&language=en-US'.format(movie_id))
     data = response.json()
     return "https://image.tmdb.org/t/p/w500/" + data['poster_path']
 
